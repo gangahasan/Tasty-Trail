@@ -10,19 +10,20 @@
 <body>
     <div id="navbar"></div>
 
-    <div id="login">
+    <form id="form">
             <h3>Login/SignUp</h3>
             <h2>Tasty Trail</h2>
             <p>Let’s LogIn or Create account with your phone number!</p>
             <input type="text" name="username" id="username" placeholder="Enter UserName*" required />
-            <input type="number" name="mobile" id="mobile" placeholder="Enter your phone number*" required />
+            <input type="text" name="mobile" id="mobile" placeholder="Enter your phone number*" required />
             <hr />
             <p>By loging into Tasty Trail, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
-            <button type="button" id="button">LogIn</button>
-    </div>
+            <input type="submit" id="submit" value="LogIn" />
+    </form>
 
     <footer id="footer"></footer>
 </body>
     <script src="./scripts/navbar.js"></script>
     <script src="./scripts/footer.js"></script>
+    <script src="./scripts/login.js" type="module"></script>
 </html>

@@ -1,4 +1,4 @@
-#login{
+#form{
     margin: 5rem auto;
     display: flex;
     flex-direction: column;
@@ -11,7 +11,7 @@
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-#login input{
+#form input{
     padding: 10px;
     margin-top: 0px;
     border-radius: 5px;
@@ -20,12 +20,12 @@
     width: 70%;
     margin-bottom: 10px;
 }
-#login h2{
+#form h2{
     color: #f9700d;
     margin: 0px;
     padding: 0px;
 }
-#login button {
+#submit {
     padding: 10px 20px;
     background-color: #f9700d;
     color: white;
@@ -35,11 +35,11 @@
     transition: background-color 0.3s ease;
     font-size: 18px;
 }
-#login p {
+#form p {
     color: black;
     font-size: small;
 }
-#login p a {
+#form p a {
     color:black;
     text-decoration: underline;
 }
