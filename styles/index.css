@@ -1,0 +1,126 @@
+body {
+  margin: 0 auto;
+  display: block;
+  font-family: sans-serif;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f97316;
+  padding: 0.8rem 10rem;
+}
+#navbar #logo {
+  font-size: 28px;
+  align-content: center;
+  font-family: cursive;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 20px;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+}
+#navlist {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#order {
+  background-color: #f97316;
+  color: white;
+  padding: 15px 25px;
+  border-radius: 30px;
+  transition: background-color 0.3s;
+  border: none;
+  font-size: 20px;
+  position: relative; 
+  z-index: 2; 
+  cursor: pointer;
+}
+
+#order:hover {
+  background-color: #ea580c;
+}
+#main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#cont {
+    position: relative;
+  text-align: center;
+  background-image: url("../assets/backgroundImage.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 500px;
+}
+#cont::before {
+  content: ""; 
+  position: absolute; 
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.4); 
+  z-index: 1; 
+}
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: bold;
+  margin: 2rem;
+  position: relative; 
+  z-index: 2; 
+
+}
+p {
+  color: white;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  position: relative; 
+  z-index: 2;
+  
+}
+#dishes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+#footerbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #f9700d;
+  color: white;
+  text-align: center;
+}
+#footerbar div {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+#footerbar p {
+  font-size: 14px;
+  margin-left: 20px;
+  text-align: center;
+}
+#footerLinks a {
+  color: white;
+  text-decoration: none;
+  margin: 0px 20px;
+  transition: color 0.3s ease;
+  font-size: 18px;
+  font-weight: bold;
+}
