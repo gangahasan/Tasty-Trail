@@ -11,7 +11,7 @@ function getData(){
     let dishes = document.getElementById("dishes");
     dishes.innerHTML = "";
 
-    fetch(`${baseUrl}/featuredProducts`)
+    fetch(`${baseUrl}/featuredDishes`)
       .then((res) => res.json())
       .then((data) => {
         data.map((el, i) => {

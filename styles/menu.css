@@ -16,14 +16,15 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  left: 0;
+  position: fixed;
 }
 
 #menu h2 {
   color: #f97316;
-  font-size: 22px;
-  margin-bottom: 20px;
+  margin-left: 15px;
+  font-size: 24px;
   font-weight: 700;
-  width: 100%;
 }
 
 #menu ul {
@@ -37,7 +38,7 @@
   margin: 15px 0;
 }
 
-#menu a {
+#menu li {
   text-decoration: none;
   padding: 10px 15px;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -48,16 +49,59 @@
   color: black;
   display: block;
   border-radius: 5px;
+  font-weight: 600;
 }
 
-#menu a:hover {
+#menu li:hover {
   background-color: #f97316;
   color: white;
 }
 
-#items {
+#dishescont {
   flex: 3; 
   background-color: #f8f9fa;
   border-radius: 5px;
   padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 10px;
+  margin-left: 20rem;
+}
+#dishescont img{
+  width: 100%;
+}
+
+#dishescont div {
+  width: 300px;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+  transition: box-shadow 0.3s ease;
+  }
+  
+#dishescont button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dishescont button:hover {
+  background-color: #f3612f;
+}
+#dishescont h4 {
+  margin: 2px;
+}
+.highlight {
+  background-color: #f97316; 
+  color: white;             
+  font-weight: bold;        
+  border-radius: 5px;    
+  padding: 5px;             
 }
