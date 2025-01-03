@@ -32,12 +32,12 @@ h1 {
   align-items: center;
   gap: 10px;
 }
-p {
+.detail p {
   color: #f97316;
 }
 
 #dishescont > div {
-  width: 70%;
+  width: 80%;
   height: auto;
   padding: 10px;
   border-radius: 5px;
@@ -47,7 +47,7 @@ p {
 }
 #summary {
   flex: 1;
-  padding: 20px;
+  padding: 20px 40px;
   margin-top: 20px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -89,4 +89,9 @@ p {
     padding: 3px 5px;
     border-radius: 5px;
     margin-top: 4px;
+}
+#subprice,#delivprice,#totalprice{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

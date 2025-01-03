@@ -1,0 +1,30 @@
+
+h1{
+    text-align: center;
+}
+#checkout {
+  margin: 2rem auto;
+  width: 40%;
+}
+#checkout h3 {
+  padding: 10px;
+  margin: 0px;
+}
+ #info {
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction:column ;
+  gap: 5px;
+  margin-bottom: 20px;
+  padding: 20px 10px;
+}
+input{
+    padding: 2px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    transition: border-bottom 0.3s ease;
+
+}

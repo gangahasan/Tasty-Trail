@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/cart.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/cart.css" />
     <title>Cart page</title>
-</head>
-<body>
-    <h1> Shopping Cart</h1>
+  </head>
+  <body>
+    <h1>Shopping Cart</h1>
 
     <div id="cartcont">
-        
-        <div id="dishescont"></div>
+      <div id="dishescont"></div>
 
-        <div id="summary">
-            <h2>Order Summary</h2>
-            <p>Sub Total</p>
-            <p>Delivery Fee</p>
-            <hr />
-            <p>Total</p>
-            <button id="checkout">Checkout</button>
+      <div id="summary">
+
+        <h2>Order Summary</h2>
+        
+        <div id="subprice">
+          <p>Sub Total</p>
+          <p id="subtotal">0.00/-</p>
         </div>
 
+        <div id="delivprice">
+          <p>Delivery Fee</p> 
+          <p id="delivery">5.00/-</p>
+
+        </div>
+        <hr />
+        <div id="totalprice">
+          <p>Total</p>
+          <p id="total">5.00/-</p>
+        </div>
+
+        <button id="checkout">Checkout</button>
+      </div>
     </div>
-    
-</body>
-<script src="./scripts/cart.js" type="module"></script>
+  </body>
+  <script src="./scripts/cart.js" type="module"></script>
 </html>
