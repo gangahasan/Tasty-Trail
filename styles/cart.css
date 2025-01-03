@@ -21,7 +21,7 @@ h1{
   flex-direction: column;
   gap: 10px;
   margin-left: 3rem;
-  z-index: ;
+  z-index:1 ;
 }
 #dishescont img {
   width: 100px;
