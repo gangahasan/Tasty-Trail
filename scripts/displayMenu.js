@@ -28,6 +28,8 @@ export function displayMenu(menu, isAddtoCart, isOrderNow) {
        let cartItems = JSON.parse(localStorage.getItem("cart")) || [];
         cartItems.push(el);
         localStorage.setItem("cart", JSON.stringify(cartItems));
+        const cartCount = cartItems?.length || 0;
+        document.getElementById("cart-count").textContent = cartCount;
         alert("Item added to cart");
       });
       card.append(addToCartBtn);

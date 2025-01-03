@@ -19,10 +19,15 @@ body {
 }
 
 #navbar #logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   font-size: 28px;
   align-content: center;
   color: #f97316;
 }
+
 #navbar a {
   color: rgb(80, 80, 80);
   text-decoration: none;
@@ -34,7 +39,7 @@ body {
 #navbar a:hover {
   color: #f97316;
 }
-#navlist {
+#nav-list {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -179,4 +184,15 @@ h2 {
   font-weight: bold;        
   border-radius: 5px;    
   padding: 5px;             
+}
+#cart-count{
+  top:0;
+  color:#f97316;
+  border-radius: 50%;
+  font-size: 16px;
+}
+#cart{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

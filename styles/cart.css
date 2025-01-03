@@ -30,10 +30,18 @@ h1 {
 .cartitem {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 30px;
 }
 .detail p {
   color: #f97316;
+  text-wrap: wrap;
+}
+.update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    /* background-color: blue; */
 }
 
 #dishescont > div {
@@ -72,23 +80,32 @@ h1 {
 }
 .quantity-controls {
   margin-top: 5px;
+  margin-right: 0px;
+  padding-right: 0px;
   display: flex;
   align-items: center;
   gap: 5px;
   border: 1px solid rgb(137, 137, 137);
+  float: right;
 }
 .quantity-controls button {
   border: none;
   background-color: transparent;
 }
-.delete-btn {
-    background-color: #f97316;
-    font-size: 12px;
-    color: white;
+.deletebtn {
     border: none;
-    padding: 3px 5px;
-    border-radius: 5px;
-    margin-top: 4px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+.deletebtn > .deleteicon {
+    width: 25px;
+    height: 25px;
+    max-width: 80%;
+    max-height: 80%;
+    color: #f97316;
 }
 #subprice,#delivprice,#totalprice{
     display: flex;

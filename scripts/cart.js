@@ -25,6 +25,8 @@ function getCartDishes(cartDishes) {
     // price.textContent = `Price:  ${el.price}`;
 
     //   detail.append(receipename, price);
+    let update = document.createElement("div");
+    update.classList.add("update");
 
     let quantityControls = document.createElement("div");
     quantityControls.classList.add("quantity-controls");
@@ -46,15 +48,21 @@ function getCartDishes(cartDishes) {
 
     quantityControls.append(minusButton, quantity, plusButton);
 
-    detail.append(receipename, price, quantityControls);
+    detail.append(receipename, price);
 
     // Delete button
     let deleteButton = document.createElement("button");
-    deleteButton.textContent = "Delete";
-    deleteButton.classList.add("delete-btn");
+    let deleteIcon = document.createElement("img");
+    deleteIcon.src = "./assets/delete.png";
+    deleteIcon.classList.add("deleteicon");
+    deleteButton.append(deleteIcon);
+
+    update.append(quantityControls, deleteButton);
+   
+    deleteButton.classList.add("deletebtn");
     deleteButton.addEventListener("click", () => deleteItem(i));
 
-    cartitem.append(img, detail, quantityControls, deleteButton);
+    cartitem.append(img, detail, update);
     dishcont.append(cartitem);
   });
 }

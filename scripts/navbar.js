@@ -4,15 +4,19 @@ const navbar = () => {
     <a href="./index.html">Home</a>
     <a href="./login.html">Login</a>
     <a href="./menu.html">Menu</a>
-    <a href="./cart.html">Cart</a>
+    <a href="./cart.html" id="cart">
+        <img src="./assets/shopping-cart.png" width="30px" height="30px" alt="Cart Icon" />
+        <span id="cart-count">0</span>
+      </a>
+    <a href="./contact.html"></a>
     <a href="./about.html">About</a>
-    
     </div>`;
 
   document.getElementById("navbar").innerHTML = card;
 
   window.addEventListener("DOMContentLoaded", () => {
     setupNavbarHighlight();
+    updateCartCount();
   });
   function setupNavbarHighlight() {
     const navLinks = document.querySelectorAll("#nav-list a");
@@ -24,6 +28,11 @@ const navbar = () => {
         link.classList.remove("navhighlight");
       }
     });
+  }
+  function updateCartCount() {
+    let cart = JSON.parse(localStorage.getItem("cart"));
+    const cartCount = cart?.length || 0;
+    document.getElementById("cart-count").textContent = cartCount;
   }
 
 };
