@@ -90,7 +90,7 @@ h1 {
   position: relative;
   z-index: 2;
 }
-p {
+#cont p {
   color: white;
   font-size: 1.25rem;
   margin-bottom: 2rem;
@@ -173,4 +173,10 @@ h2 {
   transition: color 0.3s ease;
   font-size: 18px;
   font-weight: bold;
+}
+.navhighlight {
+  color: #f97316;             
+  font-weight: bold;        
+  border-radius: 5px;    
+  padding: 5px;             
 }

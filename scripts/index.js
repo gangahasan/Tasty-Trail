@@ -7,6 +7,9 @@ button.addEventListener("click", function () {
 });
 
 window.onload = getData;
+
+
+  
 function getData(){
     let dishes = document.getElementById("dishes");
     dishes.innerHTML = "";
@@ -36,3 +39,4 @@ function getData(){
         alert("Failed to fetch data");
     })
 }
+

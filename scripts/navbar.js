@@ -10,5 +10,21 @@ const navbar = () => {
     </div>`;
 
   document.getElementById("navbar").innerHTML = card;
+
+  window.addEventListener("DOMContentLoaded", () => {
+    setupNavbarHighlight();
+  });
+  function setupNavbarHighlight() {
+    const navLinks = document.querySelectorAll("#nav-list a");
+
+    navLinks.forEach((link) => {
+      if (link.href === window.location.href) {
+        link.classList.add("navhighlight");
+      } else {
+        link.classList.remove("navhighlight");
+      }
+    });
+  }
+
 };
 navbar();

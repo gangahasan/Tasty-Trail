@@ -1,0 +1,87 @@
+#cartcont {
+  width: 80%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-around;
+  gap: 30px;
+}
+h1{
+    margin: 4rem;
+    margin-bottom: 20px;
+    top: 2px;
+    position: sticky;
+    z-index: 2;
+}
+#dishescont {
+  flex: 3;
+  /* background-color: #f8f9fa; */
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 3rem;
+  z-index: ;
+}
+#dishescont img {
+  width: 100px;
+  height: 100px;
+}
+.cartitem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+p {
+  color: #f97316;
+}
+
+#dishescont > div {
+  width: 70%;
+  height: auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+#summary {
+  flex: 1;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 5px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.3s ease;
+  height: fit-content;
+}
+#summary button {
+    width: 80%;
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f97316;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* #dishescont button {
+  margin: 10px;
+  padding: 10px 20px;
+  background-color: #f97316;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#dishescont button:hover {
+  background-color: #f3612f;
+}
+#dishescont h4 {
+  margin: 2px;
+} */
