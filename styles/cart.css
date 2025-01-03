@@ -5,12 +5,12 @@
   justify-content: space-around;
   gap: 30px;
 }
-h1{
-    margin: 4rem;
-    margin-bottom: 20px;
-    top: 2px;
-    position: sticky;
-    z-index: 2;
+h1 {
+  margin: 4rem;
+  margin-bottom: 20px;
+  top: 2px;
+  position: sticky;
+  z-index: 2;
 }
 #dishescont {
   flex: 3;
@@ -21,7 +21,7 @@ h1{
   flex-direction: column;
   gap: 10px;
   margin-left: 3rem;
-  z-index:1 ;
+  z-index: 1;
 }
 #dishescont img {
   width: 100px;
@@ -56,7 +56,7 @@ p {
   height: fit-content;
 }
 #summary button {
-    width: 80%;
+  width: 80%;
   margin: 10px;
   padding: 10px 20px;
   background-color: #f97316;
@@ -67,21 +67,26 @@ p {
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
-
-/* #dishescont button {
-  margin: 10px;
-  padding: 10px 20px;
-  background-color: #f97316;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#dishescont button:hover {
-  background-color: #f3612f;
-}
 #dishescont h4 {
   margin: 2px;
-} */
+}
+.quantity-controls {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border: 1px solid rgb(137, 137, 137);
+}
+.quantity-controls button {
+  border: none;
+  background-color: transparent;
+}
+.delete-btn {
+    background-color: #f97316;
+    font-size: 12px;
+    color: white;
+    border: none;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin-top: 4px;
+}
