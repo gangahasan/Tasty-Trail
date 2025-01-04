@@ -22,3 +22,16 @@ updateOrderSummary(cartDishes);
   document.getElementById("total").textContent = `${total.toFixed(2)}/-`;
 }
 updateOrderSummary();
+
+let checkout = document.getElementById("checkout");
+
+checkout.addEventListener("submit", function (event) {
+    event.preventDefault();
+    // Redirect to payment gateway or display a success message
+    alert("Payment successful! Your order will be delivered soon.");
+    localStorage.removeItem("cart");
+    updateOrderSummary();
+    // Update the cart icon to reflect the empty state
+    document.getElementById("cart-count").textContent = 0;
+
+});
