@@ -37,7 +37,7 @@ function getCartDishes(cartDishes) {
 
     let quantity = document.createElement("span");
     let quantityValue = el.quantity || 1;
-    let priceValue = (el?.price).replace(/[^\d.]/g, "")
+    let priceValue = (el?.price).replace(/[^\d.]/g, "");
     quantity.textContent = el.quantity || 1;
     console.log("quantity", quantityValue, priceValue); // Default quantity to 1 if not present
     price.textContent = `Price: ₹${priceValue * quantityValue}`;
@@ -53,12 +53,12 @@ function getCartDishes(cartDishes) {
     // Delete button
     let deleteButton = document.createElement("button");
     let deleteIcon = document.createElement("img");
-    deleteIcon.src = "./assets/delete.png";
+    deleteIcon.src = "./assets/bin.png";
     deleteIcon.classList.add("deleteicon");
     deleteButton.append(deleteIcon);
 
     update.append(quantityControls, deleteButton);
-   
+
     deleteButton.classList.add("deletebtn");
     deleteButton.addEventListener("click", () => deleteItem(i));
 
@@ -106,7 +106,9 @@ export function updateOrderSummary() {
 
   // Update HTML elements
   document.getElementById("subtotal").textContent = `${subtotal.toFixed(2)}/-`;
-  document.getElementById("delivery").textContent = `${deliveryFee.toFixed(2)}/-`;
+  document.getElementById("delivery").textContent = `${deliveryFee.toFixed(
+    2
+  )}/-`;
   document.getElementById("total").textContent = `${total.toFixed(2)}/-`;
 }
 updateOrderSummary();

@@ -36,12 +36,12 @@ h1 {
   color: #f97316;
   text-wrap: wrap;
 }
-.update{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5px;
-    /* background-color: blue; */
+.update {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  /* background-color: blue; */
 }
 
 #dishescont > div {
@@ -93,22 +93,24 @@ h1 {
   background-color: transparent;
 }
 .deletebtn {
-    border: none;
-    width: 25px;
-    height: 25px;
-    background-color: transparent;
-    margin-top: 5px;
+  border: none;
+  width: 35px;
+  height: 25px;
+  background-color: transparent;
+  margin-top: 5px;
 }
 
 .deletebtn > .deleteicon {
-    width: 25px;
-    height: 25px;
-    max-width: 80%;
-    max-height: 80%;
-    color: #f97316;
+  width: 25px;
+  height: 25px;
+  max-width: 80%;
+  max-height: 80%;
+  color: #f97316;
 }
-#subprice,#delivprice,#totalprice{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+#subprice,
+#delivprice,
+#totalprice {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

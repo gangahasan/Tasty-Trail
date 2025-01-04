@@ -18,22 +18,23 @@ const navbar = () => {
     setupNavbarHighlight();
     updateCartCount();
   });
+
   function setupNavbarHighlight() {
     const navLinks = document.querySelectorAll("#nav-list a");
-
     navLinks.forEach((link) => {
       if (link.href === window.location.href) {
-        link.classList.add("navhighlight");
-      } else {
+        console.log("_001", window.location.href);
+        console.log("_002", link.href);
         link.classList.remove("navhighlight");
       }
+      link.classList.add("navhighlight");
     });
   }
+
   function updateCartCount() {
     let cart = JSON.parse(localStorage.getItem("cart"));
     const cartCount = cart?.length || 0;
     document.getElementById("cart-count").textContent = cartCount;
   }
-
 };
 navbar();

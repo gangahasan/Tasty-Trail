@@ -4,18 +4,18 @@ body {
   font-family: sans-serif;
   padding-top: 4.5rem;
   background-color: rgb(245, 245, 244);
-  }
- #navbar {
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  z-index: 1000; 
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.6rem 5rem;
-  background-color: #fff; 
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 #navbar #logo {
@@ -179,19 +179,25 @@ h2 {
   font-size: 18px;
   font-weight: bold;
 }
-.navhighlight {
+/* .navhighlight {
   color: #f97316;             
   font-weight: bold;        
   border-radius: 5px;    
   padding: 5px;             
+} */
+.navhighlight {
+  font-weight: bold;
+  color: #ff6347;
+  text-decoration: underline;
 }
-#cart-count{
-  top:0;
-  color:#f97316;
+
+#cart-count {
+  top: 0;
+  color: #f97316;
   border-radius: 50%;
   font-size: 16px;
 }
-#cart{
+#cart {
   display: flex;
   align-items: center;
   justify-content: center;
