@@ -2,7 +2,7 @@
 **Tasty** Trail is an interactive and visually appealing web application designed to explore recipes, food categories, and culinary delights. It provides users with an engaging experience to navigate through diverse cuisines and find inspiration for their next meal. The application is built using modern web technologies for seamless performance and responsiveness.
 
 # 🌐 Live Demo
-Check out the live version of the project here: [Tasty Trail]("https://gangahasan.github.io/Tasty-Trail/")
+Check out the live version of the project here: [Tasty Trail](https://gangahasan.github.io/Tasty-Trail/)
 
 # 🛠️Features
 * **User-Friendly Interface:** An intuitive and visually engaging design for hassle-free navigation.
@@ -23,7 +23,7 @@ Check out the live version of the project here: [Tasty Trail]("https://gangahasa
 
 # 🚀 How to Use
 
-* Open the live demo link: [Tasty Trail]("https://gangahasan.github.io/Tasty-Trail/").
+* Open the live demo link: [Tasty Trail](https://gangahasan.github.io/Tasty-Trail/).
 
 * Browse through the different food categories and recipes.
 
