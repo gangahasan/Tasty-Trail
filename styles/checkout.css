@@ -28,3 +28,68 @@ input{
     transition: border-bottom 0.3s ease;
 
 }
+/*  medium screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+  #checkout {
+    width: 50%;
+  }
+
+  #info {
+    padding: 15px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+}
+
+/* Small screens (max-width: 800px) */
+@media (max-width: 800px) {
+  #checkout {
+    width: 60%;
+  }
+
+  #info {
+    padding: 10px;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  #checkout h3 {
+    font-size: 18px;
+  }
+}
+
+/* Very small screens (max-width: 500px) */
+@media (max-width: 500px) {
+  #checkout {
+    width: 80%;
+  }
+
+  #info {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  #checkout h3 {
+    font-size: 16px;
+  }
+}

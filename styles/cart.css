@@ -114,3 +114,102 @@ h1 {
   align-items: center;
   justify-content: space-between;
 }
+
+@media (max-width: 1200px) {
+  #cartcont {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #dishescont {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  #summary {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  h1 {
+    margin: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  #cartcont {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  #dishescont {
+    width: 100%;
+    margin-left: 0;
+    padding: 15px;
+  }
+
+  #summary {
+    width: 100%;
+    padding: 15px;
+  }
+
+  #summary button {
+    width: 100%;
+  }
+
+  .cartitem {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 1rem;
+  }
+}
+
+@media (max-width: 500px) {
+  #cartcont {
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  #dishescont {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #summary {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cartitem {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  h1 {
+    font-size: 20px;
+    margin: 1rem;
+  }
+
+  #dishescont img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .quantity-controls {
+    gap: 3px;
+  }
+
+  .deletebtn > .deleteicon {
+    width: 20px;
+    height: 20px;
+  }
+}
