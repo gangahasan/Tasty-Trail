@@ -9,7 +9,7 @@ const navbar = () => {
         <span id="cart-count">0</span>
       </a>
     <a href="./contact.html"></a>
-    <a href="./about.html">About</a>
+    <a href="./about.html"></a>
     </div>`;
 
   document.getElementById("navbar").innerHTML = card;

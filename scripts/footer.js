@@ -2,7 +2,7 @@ const footer = () => {
   let footer = `
         <div id="footerbar">
             <p>&copy; 2024 Tasty Trail. All rights reserved.</p>
-            <div id="footerLinks">
+            <div id="footerLink">
             <a href="#">Privacy Policy</a>
             <a href="#">Terms of Service</a> 
             <a href="#">Contact Us</a>

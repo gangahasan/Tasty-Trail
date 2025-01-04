@@ -43,6 +43,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-right: 40px;
 }
 
 #order {
@@ -171,7 +172,7 @@ h2 {
   margin-left: 20px;
   text-align: center;
 }
-#footerLinks a {
+#footerLink a {
   color: white;
   text-decoration: none;
   margin: 0px 20px;
@@ -190,7 +191,6 @@ h2 {
   color: #ff6347;
   text-decoration: underline;
 }
-
 #cart-count {
   top: 0;
   color: #f97316;
@@ -202,7 +202,6 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-
 @media (max-width: 1200px) {
   #navbar {
     padding: 0.6rem 2rem;
