@@ -23,6 +23,12 @@ function getData(){
           let dishname = document.createElement("h3");
           let price = document.createElement("h3");
           let orderNow = document.createElement("button");
+          orderNow.addEventListener("click", function(){
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.push(el);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            window.location.href = "cart.html";
+          })
 
           image.src = el.image;
           dishname.textContent = el.receipename;
