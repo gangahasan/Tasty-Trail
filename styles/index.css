@@ -115,8 +115,9 @@ h2 {
 #dishes {
   margin: 2rem auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   text-align: center;
+  gap: 20px;
   width: 80%;
 }
 #dishes h3 {
@@ -143,49 +144,11 @@ h2 {
   padding: 10px 20px;
   border-radius: 20px;
   background-color: white;
-  /* transition: background-color 0.3s; */
   border: none;
   font-size: 18px;
   font-weight: bold;
   cursor: pointer;
 }
-
-#footerbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  bottom: 0;
-  position: fixed;
-  width: 100%;
-  background-color: rgb(52, 52, 52);
-  color: white;
-  text-align: center;
-}
-#footerbar div {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 10px;
-}
-#footerbar p {
-  font-size: 14px;
-  margin-left: 20px;
-  text-align: center;
-}
-#footerLink a {
-  color: white;
-  text-decoration: none;
-  margin: 0px 20px;
-  transition: color 0.3s ease;
-  font-size: 18px;
-  font-weight: bold;
-}
-/* .navhighlight {
-  color: #f97316;             
-  font-weight: bold;        
-  border-radius: 5px;    
-  padding: 5px;             
-} */
 .navhighlight {
   font-weight: bold;
   color: #ff6347;
@@ -235,11 +198,13 @@ h2 {
 
   #dishes {
     grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
     width: 90%;
   }
 
   #dishes div {
     width: 90%;
+    gap: 10px;
   }
 
   #footerbar {
@@ -257,7 +222,6 @@ h2 {
   }
 }
 
-/* Small screens (max-width: 800px) */
 @media (max-width: 800px) {
   #navbar {
     padding: 0.6rem 1.5rem;
@@ -312,8 +276,6 @@ h2 {
     margin: 10px 0;
   }
 }
-
-/* Very small screens (max-width: 500px) */
 @media (max-width: 500px) {
   #navbar {
     padding: 0.6rem 1rem;

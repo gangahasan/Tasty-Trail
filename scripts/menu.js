@@ -17,6 +17,8 @@ function displayDishes(item) {
       dishescont.append(title);
 
       displayMenu(burgersObject[0].items, true, false);
+      // displayMenu(menu, true, true, "price", "asc", 5, 1);
+
     })
     .catch((error) => {
       console.log(error);
