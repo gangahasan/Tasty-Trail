@@ -3,7 +3,8 @@ import { displayMenu } from "./displayMenu.js";
 let cartDishes = JSON.parse(localStorage.getItem("cart"));
 
 if (cartDishes === null) {
-  alert("Your cart is Empty");
+  alert("Your cart is Empty,Please add your favourite items from menu.");
+  window.location.href= "menu.html";
 }
 getCartDishes(cartDishes);
 function getCartDishes(cartDishes) {
@@ -15,6 +16,8 @@ function getCartDishes(cartDishes) {
 
     let img = document.createElement("img");
     let detail = document.createElement("div");
+    let imgDetail = document.createElement("div");
+    imgDetail.classList.add("imgDetail");
     detail.classList.add("detail");
 
     let receipename = document.createElement("h4");
@@ -49,6 +52,7 @@ function getCartDishes(cartDishes) {
     quantityControls.append(minusButton, quantity, plusButton);
 
     detail.append(receipename, price);
+    imgDetail.append(img , detail);
 
     // Delete button
     let deleteButton = document.createElement("button");
@@ -62,7 +66,7 @@ function getCartDishes(cartDishes) {
     deleteButton.classList.add("deletebtn");
     deleteButton.addEventListener("click", () => deleteItem(i));
 
-    cartitem.append(img, detail, update);
+    cartitem.append(imgDetail, update);
     dishcont.append(cartitem);
   });
 }

@@ -6,9 +6,12 @@
   gap: 30px;
 }
 h1 {
-  margin: 4rem;
+  /* margin: 4rem; */
+  margin-top: 0px;
+  padding: 20PX;
+  text-align: center;
   margin-bottom: 20px;
-  top: 2px;
+  top: 0;
   position: sticky;
   z-index: 2;
 }
@@ -35,6 +38,7 @@ h1 {
 .detail p {
   color: #f97316;
   text-wrap: wrap;
+  margin-left:10px;
 }
 .update {
   display: flex;
@@ -52,6 +56,14 @@ h1 {
   background-color: #ffffff;
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.3s ease;
+  /* background-color: #f97316; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#dishescont .imgDetail{
+  display: flex;
+  gap:20px
 }
 #summary {
   flex: 1;
@@ -76,7 +88,8 @@ h1 {
   transition: background-color 0.3s ease;
 }
 #dishescont h4 {
-  margin: 2px;
+  margin: 10px;
+
 }
 .quantity-controls {
   margin-top: 5px;
@@ -86,11 +99,11 @@ h1 {
   align-items: center;
   gap: 5px;
   border: 1px solid rgb(137, 137, 137);
-  float: right;
 }
 .quantity-controls button {
   border: none;
   background-color: transparent;
+ 
 }
 .deletebtn {
   border: none;
