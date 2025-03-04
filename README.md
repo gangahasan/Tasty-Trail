@@ -6,7 +6,9 @@ Check out the live version of the project here: [Tasty Trail](https://gangahasan
 
 # 🛠️Features
 * **User-Friendly Interface:** An intuitive and visually engaging design for hassle-free navigation.
+
 * **Dynamic Content:** Explore a variety of recipes and food categories dynamically.
+
 * **Interactive Elements:** Clickable cards, buttons, and interactive sections to enhance user engagement.
 
 
@@ -23,7 +25,7 @@ Check out the live version of the project here: [Tasty Trail](https://gangahasan
 
 # 🚀 How to Use
 
-* Open the live demo link: [Tasty Trail](https://gangahasan.github.io/Tasty-Trail/).
+* Open the live demo link: [Tasty Trail](https://gangahasan.github.io/Tasty-Trail/).(Open this in a new tab)
 
 * Browse through the different food categories and recipes.
 
