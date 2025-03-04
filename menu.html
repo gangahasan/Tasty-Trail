@@ -7,10 +7,17 @@
     <link rel="stylesheet" href="./styles/menu.css">
     <title>Menu Page</title>
 </head>
-<body>
+<body style="height: 2000px">
     <div id="navbar"></div>
-
+            <div class="sorting">
+                <select class="sortOption">
+                    <option value="All">Sort By Price</option>
+                    <option value="H-L">High to Low</option>
+                    <option value="L-H">Low to High</option>
+                </select>
+            </div>
     <div id="menuCont">
+        
         <div id="menu">
             <h2>Our Menu</h2>
             <ul>
@@ -25,10 +32,12 @@
                 <li id="special">SPECIAL EVENTS</li>
             </ul>
         </div>
-        <div id="dishescont">
+           
 
+        <div id="dishescont">
             
         </div>
+
 
     </div>
 
@@ -36,7 +45,7 @@
     
 </body>
 
-<script src="./scripts/menu.js" type="module"></script>
- <script src="./scripts/navbar.js"></script>
+    <script src="./scripts/menu.js" type="module"></script>
+    <script src="./scripts/navbar.js"></script>
   <!-- <script src="./scripts/footer.js"></script> -->
 </html>

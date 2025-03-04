@@ -56,12 +56,29 @@
   background-color: #f97316;
   color: white;
 }
+.sorting{
+  float: right;
+  top: 4.5rem;
+  position: sticky;
+  z-index: 1000;
 
-#dishescont {
+}
+.sorting select{
+  background-color: #f97316;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 6px;
+  border-radius: 10px;
+}
+.productscont{
   flex: 3; 
   background-color: #f8f9fa;
   border-radius: 5px;
-  padding: 20px 40px;
+  padding: 20px 20px;
+   margin-left: 20rem;
+}
+#dishescont {
   display: grid;
   grid-template-columns: repeat(3,1fr);
   gap: 10px;
